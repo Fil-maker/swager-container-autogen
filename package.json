@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "env-cmd": "^10.1.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "lowdb": "^3.0.0",
+    "nodemon": "^2.0.15",
+    "swagger-autogen": "^2.13.0",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "name": "express-swagger",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server.js",
+    "start": "env-cmd -x node server.js --NODE_ENV=production",
+    "gen": "node ./swagger/index.js"
+  }
+}
