@@ -1,3 +1,5 @@
 /node_modules/
 .idea
 /test.routes.js
+/node_modules/
+./.idea
