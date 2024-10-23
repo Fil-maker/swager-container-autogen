@@ -41,6 +41,8 @@ const doc = {
 const outputFile = join(_dirname, 'output.json')
 const endpointsFiles = []
 
+
+fs.mkdirSync('./copy/', { recursive: true })
 const testFolder = './copy/';
 fs.readdirSync(testFolder).forEach(file => {
     console.log(join(_dirname, "copy/" + file))
